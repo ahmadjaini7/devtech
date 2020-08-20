@@ -1,0 +1,81 @@
+.jarak {
+    padding: 0 10px;
+    border-bottom: 2px solid white;
+}
+
+.tombol {
+    color: #ef6c00 !important;
+}
+
+.container-fluid {
+    margin: auto 30px;
+}
+
+.background {
+    background-color: #ef6c00;
+}
+
+.dev {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+    padding: 30px 10px;
+}
+
+.warna {
+    display: inline-block;
+    background-color: white;
+    color: #ef6c00;
+    padding: 1px 15px 3px 15px;
+    border-radius: 5px;
+
+}
+
+.warna:hover {
+    font-weight: 500;
+}
+
+footer {
+    background-color: #ef6c00;
+    color: white;
+    padding: 15px;
+}
+
+.home {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.blog {
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+span {
+    display: inline-block;
+    background-color: #ef6c00;
+    color: white;
+    padding: 1px 15px 3px 15px;
+    border-radius: 5px;
+
+}
+
+h4 {
+    text-align: left;
+}
+
+a {
+    color: white;
+}
+
+@media screen and (max-width: 670px) {
+    .dev {
+        color: white;
+        font-size: 18px;
+        text-align: justify;
+        font-weight: 400;
+        padding: 5px 15px;
+    }
+}

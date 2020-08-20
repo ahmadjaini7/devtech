@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
+    <!-- Import style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- create web app manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ef6c00" />
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav>
+            <div class="nav-wrapper ##ef6c00 orange darken-3 jarak">
+                <a href="#" class="brand-logo ">DEV-TECH</a>
+                <a href="" data-target="mobile-demo"
+                    class="sidenav-trigger waves-light btn #ffffff white tombol""><i class="
+                    material-icons">menu</i></a>
+
+                <!--menu navbar-->
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="mobile-demo"></ul>
+                <!-- end menu navbar -->
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+        <div class="row background">
+            <div class="col s12 m6  ">
+                <p class="dev"> Dev Technology merupakan perusahaan yang bergerak dibidang jasa dengan menawarkan
+                    berbagai solusi
+                    untuk pembuatan atau pengembangan Website Anda <br>
+                    <span class="warna"> Join Us </span> </p>
+            </div>
+            <div class="col s12 m6 center-align"><img src="./image/banner2.png" width=75%" alt=""></div>
+        </div>
+        <div class="container-fluid" id="body-content">
+        </div>
+    </main>
+    <!-- end main -->
+    <footer>
+        <p><i class="material-icons left">copyright</i> Copyright Dev Technology 2020</p>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script>
+        //  Connect service worker
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/services-worker.js")
+                    .then(function () {
+                        console.log("Pendaftaran ServiceWorker berhasil");
+                    })
+                    .catch(function () {
+                        console.log("Pendaftaran ServiceWorker gagal");
+                    });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+</body>
+
+</html>
